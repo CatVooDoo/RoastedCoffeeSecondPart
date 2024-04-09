@@ -1,0 +1,118 @@
+:root {
+    --white-color: #fff;
+    --hover-color: #C7A17A;
+    --active-color: #D59552;
+    --background-color: #020204;
+    --card-background-color: #14141D;
+    --card-background-focus-color: #22222F;
+    --sale-price-color: #818181;
+    --line-color: #32323D;
+    --card-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    background-color: var(--background-color);
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.navigation {
+    width: 347px;
+    margin-right: 224px;
+    padding-top: 36px;
+}
+
+.navigation__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__link {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.navigation__link:hover {
+    color: var(--hover-color);
+}
+
+.navigation__link:active {
+    color: var(--active-color);
+}
+
+.logo {
+    margin-right: 437px;
+    padding-top: 18px;
+}
+
+.user__list {
+    display: flex;
+    max-width: 132px;
+    padding-top: 30px;
+}
+
+.user__item {
+    margin-right: 30px;
+}
+
+.user__item:last-child {
+    margin-right: 0;
+}
+
+.head__line {
+    height: 1px;
+    width: 1200px;
+    background-color: var(--line-color);
+    margin-bottom: 100px;
+}
+
+/* main */
+/* first section */
+.buying__card_header {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 56px;
+    line-height: 144%;
+}
+
+.product__box {
+    display: flex;
+}
+
+.product__image {
+    width: 780px;
+    height: 520px;
+    background-color: var(--card-background-color);
+    margin-right: 20px;
+    border-radius: var(--card-radius);
+}
+
+.add-to__cart {
+    width: 400px;
+    height: 249px;
+    background-color: var(--card-background-color);
+    border-radius: var(--card-radius);
+}
+
+
+
+/* price text-decoration: line-through; */
